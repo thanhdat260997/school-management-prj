@@ -33,6 +33,24 @@ const getUserInfo = () => {
     .then(res => res.json());
 };
 
+const getClassList = () => {
+  const options = {
+    method: 'get',
+    headers: authHeader()
+  };
+  return fetch(BASE_URL + CLASSES_ENDPOINT, options)
+    .then(res => res.json());
+}
+
+const deleteClass = (id) => {
+  const options = {
+    method: 'delete',
+    headers: authHeader()
+  };
+  return fetch(BASE_URL + CLASSES_ENDPOINT + '/' + id, options)
+    // .then(res => res.json());
+}
+
 export default {
-  login, getUserInfo, logout,
+  login, getUserInfo, logout, getClassList, deleteClass,
 };

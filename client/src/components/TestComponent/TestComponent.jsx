@@ -13,8 +13,8 @@ export class TestComponent extends Component {
         super(props);
         this.login = this.login.bind(this);
         this.state = {
-          username: 'u',
-          password: 'a',
+          username: '',
+          password: '',
           error: ''
         };
       }

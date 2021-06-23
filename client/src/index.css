@@ -80,3 +80,14 @@ body {
 .container {
     width: 100%;
 }
+.formgroup {
+    border: black solid 1px;
+    margin: 30px;
+    padding: 5px;
+}
+
+.class-element {
+    border: 1px solid black;
+    margin: 15px;
+    padding: 15px;
+}
